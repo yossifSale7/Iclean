@@ -1,0 +1,445 @@
+:root {
+    --main--color: #0f7fd9;
+    --text--color: rgba(0, 0, 0, 0.6);
+    --special--color: #f3e53d;
+    --background--color: #2b98f0;
+}
+* {
+    font-family: "Roboto", Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -webkit-o-box-sizing: border-box;
+    -webkit-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-scroll-behavior: smooth;
+    -webkit-o-scroll-behavior: smooth;
+    -webkit-moz-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+.container {
+    padding: 0 15px; 
+    margin: 0 auto;
+    max-width: 1150px;
+}
+header {
+    background-color: var(--main--color);
+    width: 100%;
+}
+header .head-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 0;
+    color: white;
+}
+header .head-items {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 500;
+}
+header .head-items p {
+    color: white;
+    font-weight: 600;
+}
+header .head-items span {
+    color: var(--text--color);
+    font-weight: 500;
+}
+.main {
+    background-image: url('/I Clean/imgs/Mall-Cleaning-Services.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.main nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 190px;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: #ffffff4d;
+}
+.main nav img {
+    width: 150px;
+}
+.main nav ul {
+    display: flex;
+    flex-direction: row;
+}
+.main nav li {
+    list-style: none;
+}
+.main nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 35px;
+    position: relative;
+    transition: .3s;
+}
+.main nav li:hover a {
+    color: var(--special--color)
+}
+.main nav li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--special--color);
+    bottom: -36px;
+    left: 20px;
+    transition: .3s;
+}
+.main nav li:hover a::before {
+    width: 100%;
+}
+.main .main-items {
+    display: flex;
+    flex-direction: column;
+}
+.main .main-items .main-text {
+    margin: 180px 0;
+    color: white;
+}
+.main .main-items .main-text p {
+    font-size: 20px;
+    color: var(--text--color);
+    padding: 10px 0;
+}
+.main .main-items .main-text h2 {
+    font-size: 40px;
+    font-weight: 400;
+    width: 600px;
+    margin-bottom: 35px;
+}
+.main .main-items .main-text a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    background: var(--main--color);
+    padding: 13px 25px;
+    border: 2px solid var(--main--color);
+    border-radius: 10px;
+    transition: .4s;
+}
+.main .main-items .main-text a:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--main--color);
+}
+.about {
+    margin: 50px 0;
+    position: relative;
+}
+.about .about-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 800px;
+}
+.about .about-items img {
+    width: 650px;
+    margin-left: -30px;
+}
+.about .about-items .business-hour {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    background-color: var(--background--color);
+    padding-left: 25px;
+    padding-top: 35px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px -10px black;
+}
+.about .about-items .business-hour h2 {
+    color: var(--special--color);
+    padding-bottom: 15px;
+}
+.about .about-items .business-hour div:first-of-type {
+    display: flex;
+    flex-direction: column;
+}
+.about .about-items .business-hour div:first-of-type h5 {
+    color: var(--special--color);
+    font-size: 15px;
+    padding: 10px 0;
+}
+.about .about-items .business-hour div:first-of-type p {
+    padding: 5px 20px;
+    color: white;
+}
+.about .about-items .business-hour div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+}
+.about .about-items .business-hour div:nth-of-type(2) h5 {
+    padding: 10px 0;
+    color: var(--special--color);
+}
+.about .about-items .business-hour div:nth-of-type(2) p {
+    padding: 5px 20px;
+    color: white;
+}
+.about .about-items .business-hour div:last-of-type {
+    margin-top: 45px;
+    color: black;
+    background-color: var(--special--color);
+    padding: 25px 25px 35px;
+    width: 118%;
+    margin-left: -25px;
+}
+.about .about-items .business-hour div:last-of-type h3 {
+    padding-bottom: 24px;
+    font-size: 21px;
+}
+.about .about-items .business-hour div:last-of-type span {
+    font-size: 24px;
+}
+.about .about-items .about-text {
+    margin-top: 100px;
+    width: 500px;
+}
+.about .about-items .about-text h6 {
+    font-size: 13px;
+    color: var(--background--color);
+    padding-bottom: 10px;
+}
+.about .about-items .about-text h2 {
+    font-size: 44px;
+    color: #000000ad;
+    font-weight: 300;
+}
+.about .about-items .about-text p {
+    margin-top: 30px;
+    color: #00000080;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.about .about-items .our-experience {
+    display: flex;
+    flex-direction: row;
+    margin-top: 116px;
+    margin-left: -66px;
+    background-color: var(--special--color);
+    width: 51%;
+    height: 190px;
+}
+.about .about-items .our-experience div {
+    width: 180px;
+    padding: 45px 55px;
+}
+.about .about-items .our-experience div h3 {
+    font-size: 37px;
+    margin-bottom: 10px;
+    font-weight: 400;
+} 
+.about .about-items .our-experience div span {
+    font-size: 17px;
+    font-weight: 600;
+    color: #00000093;
+    text-align: left;
+}
+.services {
+    min-height: 400px;
+}
+.services .services-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services .services-items .services-header {
+    text-align: center;
+}
+.services .services-items .services-header h6 {
+    font-size: 13px;
+    color: var(--main--color);
+    padding-bottom: 10px;
+}
+.services .services-items .services-header h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #33313b;
+}
+.services .services-items .services-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+.services .services-items .services-container .services-showed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+.services .services-items .services-container .services-showed .items {
+    background: var(--background--color);
+    padding: 12px;
+    border-radius: 10px;
+    position: relative;
+    -webkit-box-shadow: 0px 10px 30px -4px rgb(0 0 0 / 15%);
+    -moz-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 10px 30px -4px rgb(0 0 0 / 15%);
+}
+.services .services-items .services-container .services-showed .items::after {
+    position: absolute;
+    bottom: -5px;
+    left: 5px;
+    right: 5px;
+    content: '';
+    height: 5px;
+    background: #f3e53d;
+    border-radius: 0 0 5px 5px;
+}
+.services .services-items .services-container .services-showed .items img {
+    width: 55px;
+}
+.services .services-items .services-container .services-showed .items-text {
+    margin-top: 30px;
+    text-align: center;
+}
+.services .services-items .services-container .services-showed .items-text h3 {
+    padding: 5px;
+    color: #000000c7;
+    font-weight: 500;
+}
+.services .services-items .services-container .services-showed .items-text p {
+    width: 370px;
+    padding: 10px 0;
+    color: var(--text--color);
+    font-weight: 500;
+}
+.team {
+    min-height: 500px;
+    margin-top: 100px;
+}
+.team .team-items {
+    display: flex;
+    flex-direction: row;
+}
+.team .team-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.team .team-about h6 {
+    font-size: 13px;
+    color: var(--background--color);
+}
+.team .team-about h2 {
+    padding-top: 15px;
+    font-size: 45px;
+    font-weight: 300;
+    color: #33313b;
+}
+.team .team-about p {
+    width: 250px;
+    padding: 20px 0;
+    color: var(--text--color);
+    line-height: 1.8;
+    font-weight: 500;
+}
+.team .team-images {
+    margin-left: 30px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.team .team-images .img img {
+    width: 270px;
+    transition: .3s;
+}
+.team .team-images .about-person {
+    position: absolute;
+    bottom: 0;
+    background: var(--background--color);
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+.team .team-images .about-person::after {
+    position: absolute;
+    bottom: -2px;
+    left: 7px;
+    right: 7px;
+    height: 7px;
+    content: '';
+    background: #f3e53d;
+    border-radius: 3px 3px 0 0;
+}
+.team .team-images .about-person h3 {
+    padding-bottom: 15px;
+    font-size: 21px;
+    transition: .3s;
+}
+.team .team-images .about-person p {
+    color: #ffffffb0;
+    padding-bottom: 20px;
+    transition: .3s;
+}
+.team .team-images .about-person i {
+    font-size: 17px;
+    width: 35px;
+    height: 35px;
+    padding: 9px 0;
+    margin: 0 13px;
+    margin-bottom: 15px;
+    background: var(--special--color);
+    color: var(--background--color);
+    border-radius: 50%;
+    transition: .3s;
+}
+.form-container{
+	width: 100%;
+	max-width: 600px;
+	margin:0 auto;
+    background: #09aad0;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+.input-row{
+    margin-bottom: 10px;
+}
+.input-row label{
+	display: block;
+	margin-bottom: 3px;
+}
+.input-row input,
+.input-row textarea{
+	width: 100%;
+	padding: 10px;
+	border:0;
+	border-radius: 3px;
+	outline: 0;
+	margin-bottom: 3px;
+	font-size: 18px;
+	font-family: arial;
+}
+.input-row textarea{
+	height: 100px;
+}
+.input-row input[type="submit"] {
+    width: 100px;
+    margin:0 auto;
+    display: block;
+    text-align: center; 
+    background: #002f3a;
+    color: #ffffff;
+    cursor: pointer;
+}
+.success {
+    background-color: #9fd2a1;
+    padding: 5px 10px;
+    color: #326b07;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 10px;
+}
